@@ -1,6 +1,15 @@
-<h1>Search For a Movie</h1>
+<% include ../partials/header %>
 
-<form action="/results" method="GET">
-      <input type="text" placeholder="search term" name="search" required>
-      <input type="submit">
-</form>
+<div class="container">
+      <header class="jumbotron">
+      <div class="container">
+      <h2>Welcome To jddc-MovieSearchApp!</h2>      
+      <p>Search for any movie using the OMDB API!</p>
+      <h4>Search For a Movie</h4>
+      <form class="form-group has-success has-feedback" action="/results" method="GET">
+      <input class="form-control inputSuccess4" type="text" placeholder="search term" name="search" required>
+      <button class="btn btn-success" action="submit">Submit</button>
+      </form>
+      </div>
+      </header>
+
